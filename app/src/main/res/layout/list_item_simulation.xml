@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/background_dark">
+
+    <EditText
+        android:id="@+id/item_simulation_edit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="2"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Simulation"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="18sp"
+        android:textColor="@color/editable"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ECTS"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/item_sim_total_ects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="--"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Average"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/item_sim_grade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="--"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

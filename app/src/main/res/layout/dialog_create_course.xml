@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:background="@color/background_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Title"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/create_course_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="8dp"
+            android:gravity="center_vertical|right"
+            android:text="ECTS"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/create_course_ects"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="number"
+            android:layout_marginRight="16dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:backgroundTint="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="8dp"
+            android:gravity="center_vertical|right"
+            android:text="Grade"
+
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/create_course_grade"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:backgroundTint="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/create_course_btn"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@null"
+        android:text="Submit"
+        android:textColor="@color/colorPrimaryDark" />
+</LinearLayout>
